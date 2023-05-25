@@ -39,8 +39,8 @@ jobs:
 
       - name: commit
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Deploy Action"
+          git config --local user.email "matktt@gmail.com"
+          git config --local user.name "Mateus Vasques"
           git commit -am "change image tag"
 
       - name: push
