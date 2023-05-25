@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goapp
+  namespace: default
+  labels:
+    app: goapp
+spec:
+  selector:
+    matchLabels:
+      app: goapp
+  template:
+    metadata:
+      labels:
+        app: goapp
+    spec:
+      containers:
+        - name: goapp
+          image: mateusvasques/argocd-fullcycle:latest
+          ports:
+            - containerPort: 8080
+              name: goapp
+      restartPolicy: Always
