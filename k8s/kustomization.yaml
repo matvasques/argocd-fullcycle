@@ -9,4 +9,4 @@ namespace: goapp
 images:
 - name: goapp
   newName: mateusvasques/argocd-fullcycle
-  newTag: 7ddecbb4c6be87c186e56207892636bc0539ddb6
+  newTag: 7586c97d5f5eec3b57c9e48621ece98312b62084
